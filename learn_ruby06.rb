@@ -11,10 +11,7 @@ count_to_zero(-1) -> print out -1
 
 
 def count_to_zero(n)
-    if (n <= 0)
-        print "#{n} \n"
-        return
-    end
+    return print "#{n} \n" if n <= 0
     print "#{n} "
     (count_to_zero(n-1))
 end
